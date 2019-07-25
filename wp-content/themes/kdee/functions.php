@@ -161,7 +161,6 @@ add_action( 'init', 'testimonials' );
 
 // A.2.1. End -----------------------------------------------------------------------------------------------------
 
-
 // A.2.1. SERVICES ------------------------------------------------------------------------------------------------
 
 function services() {
@@ -197,34 +196,34 @@ add_action( 'init', 'services' );
 
 // A.2.1. CONTACT DETAILS -----------------------------------------------------------------------------------------
 
-//function branches() {
-//  $labels = array(
-//    'Title'              => _x( 'Branches', 'post type general name' ),
-//    'singular_name'      => _x( 'Branch', 'post type singular name' ),
-//    'add_new'            => _x( 'Add New', 'Branch' ),
-//    'add_new_item'       => __( 'Add New Branch' ),
-//    'edit_item'          => __( 'Edit Branch' ),
-//    'new_item'           => __( 'New Branch' ),
-//    'all_items'          => __( 'All Branches' ),
-//    'view_item'          => __( 'View Branch' ),
-//    'parent_item_colon'  => '',
-//    'menu_name'          => 'Branches'
-//  );
-//
-//  $args = array(
-//    'labels'         => $labels,
-//    'description'   => 'A list of Branches',
-//    'public'        => true,
-//    'menu_position' => 8,
-//    'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
-//    'has_archive'   => true,
-//
-//  );
-//
-//  register_post_type( 'branches', $args );
-//}
-//
-//add_action( 'init', 'branches' );
+function projects() {
+  $labels = array(
+    'Title'              => _x( 'Projects', 'post type general name' ),
+    'singular_name'      => _x( 'Project', 'post type singular name' ),
+    'add_new'            => _x( 'Add New', 'Project' ),
+    'add_new_item'       => __( 'Add New Project' ),
+    'edit_item'          => __( 'Edit Project' ),
+    'new_item'           => __( 'New Project' ),
+    'all_items'          => __( 'All Projects' ),
+    'view_item'          => __( 'View Project' ),
+    'parent_item_colon'  => '',
+    'menu_name'          => 'Projects'
+  );
+
+  $args = array(
+    'labels'         => $labels,
+    'description'   => 'A list of Projects',
+    'public'        => true,
+    'menu_position' => 7,
+    'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
+    'has_archive'   => true,
+
+  );
+
+  register_post_type( 'projects', $args );
+}
+
+add_action( 'init', 'projects' );
 
 // A.2.1. End -----------------------------------------------------------------------------------------------------
 

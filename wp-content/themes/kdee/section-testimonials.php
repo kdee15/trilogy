@@ -1,7 +1,11 @@
 <section class="o-block block-testimonials" id="block-testimonials">
-  <div class="container">
+  <div class="o-testimonial-wrapper container">
     <h3>What our customers say ...</h3>
     <div class="o-testimonial-list row no-gutters">
+      
+      <figure class="a-testimonial-quote">
+        <img src="<?php bloginfo('template_url'); ?>/dist/images/icons/icon--quotes.svg" alt="" class="a-image">
+      </figure>
 
       <!-- C.1. PAGE HEADER ----------------------- -->
 

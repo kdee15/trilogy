@@ -5,8 +5,8 @@
 // A.1. GENERAL CARDS -------------------------------------------------------------------------------------------------
 
 .o-block {
-  &.block-vision { background: white; padding-top: $base-xl;
-    img { max-width: 90%; }
+  &.block-vision { background: white; padding: $base-xl 0;
+    img { max-width: 90%; margin: 0 auto; display: block; }
   }
 }
 

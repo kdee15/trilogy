@@ -33,6 +33,8 @@ get_header();
 
     <?php get_template_part( 'section-services'); ?>
 
+    <?php get_template_part( 'section-projects'); ?>
+
     <?php get_template_part( 'section-testimonials'); ?>
 
     <?php get_template_part( 'section-team'); ?>

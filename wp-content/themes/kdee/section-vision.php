@@ -1,9 +1,8 @@
 <section class="o-block block-vision" id="block-vision">
 
   <div class="container">
-    <h2>Our Vision</h2>
+    <h2 class="mb-5 d-block d-md-none">BUSINES DETAILS</h2>
     <div class="row">
-
       <?php
       $args = array(
         'post_type' => 'about',
@@ -19,6 +18,7 @@
           </figure>
 
           <aside class="col-12 col-md-6">
+            <h2 class="mb-5 d-none d-md-block">BUSINES DETAILS</h2>
             <?php the_field('about_copy') ?>
           </aside>
 

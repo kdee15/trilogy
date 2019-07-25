@@ -27,36 +27,6 @@
         }
       }
     }
-
-    .swiper-button {
-      @include vertical-align(absolute);
-      width: 15px;
-      height: 25px;
-      background-size: cover;
-      display: none;
-      opacity: 0.3;
-      transition: 0.2s;
-      outline: none!important;
-
-      &.swiper-button-next {
-        background-image: url('../../dist/images/site/button--arrow-right.svg'); right: 6px; left: auto;
-      }
-
-      &.swiper-button-prev {
-        background-image: url('../../dist/images/site/button--arrow-left.svg'); left: 6px; right: auto;
-      }
-
-      &:hover { opacity: 1; transition: 0.2s; width: 17px; height: 27px; }
-
-    }
-
-    .swiper-pagination {
-      .swiper-pagination-bullet { width: 16px; height: 4px; border-radius: 0;
-        &.swiper-pagination-bullet-active {  }
-      }
-    }
-
-
   }
 
   &.block-team {
@@ -65,6 +35,65 @@
 }
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
+
+// A.2. TESTIMONAILS CAROUSEL -----------------------------------------------------------------------------------------
+
+.o-block {
+  &.block-testimonials { background: $grey-blue; padding: 50px 0; position: relative;
+    .o-testimonial-wrapper { max-width: 600px; margin: 0 auto;
+      h3 { text-align: center; }
+      .o-testimonial-list {
+        .a-testimonial-quote { margin: 25px auto;
+          .a-image { width: 75px; }
+        }
+        .swiper-testimonials {
+          .m-quote-details {
+            .a-author { text-align: right; }
+          }
+        }
+        .testimonials-pagination { bottom: 30px; @include center-align();
+
+        }
+      }
+    }
+  }
+}
+
+// A.2. END -----------------------------------------------------------------------------------------------------------
+
+// A.3. CAROUSEL CONTROLS ---------------------------------------------------------------------------------------------
+
+
+.swiper-button {
+  @include vertical-align(absolute);
+  width: 15px;
+  height: 25px;
+  background-size: cover;
+  display: none;
+  opacity: 0.3;
+  transition: 0.2s;
+  outline: none!important;
+
+  &.swiper-button-next {
+    background-image: url('../../dist/images/site/button--arrow-right.svg'); right: 6px; left: auto;
+  }
+
+  &.swiper-button-prev {
+    background-image: url('../../dist/images/site/button--arrow-left.svg'); left: 6px; right: auto;
+  }
+
+  &:hover { opacity: 1; transition: 0.2s; width: 17px; height: 27px; }
+
+}
+
+.swiper-pagination {
+  .swiper-pagination-bullet { width: 16px; height: 4px; border-radius: 0; margin: 0 4px;
+    &.swiper-pagination-bullet-active {  }
+  }
+}
+
+
+// A.3. END -----------------------------------------------------------------------------------------------------------
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
