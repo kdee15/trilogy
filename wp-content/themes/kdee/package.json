@@ -42,7 +42,7 @@
     "tiny-lr": "^1.0.4"
   },
   "dependencies": {
-    "node-sass": "^4.9.3",
+    "node-sass": "^7.0.0",
     "rimraf": "^2.6.3"
   }
 }
